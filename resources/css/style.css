@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 60px;
+  background-color: white;
+  z-index: 5;
+  width: 90%;
+}
+
+.logo {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.personal {
+  display: flex;
+  border: 1px solid black;
+  height: 420px;
+  width: 1100px;
+}
+
+.personal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+.personal-description-header {
+  display: flex;
+}
+
+.personal-description-blurp {
+  display: flex;
+}
+
+.personal-description-content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.picture {
+  height: 380px;
+  width: 550px;
+  display: flex;
+  background-image: url("../images/michaelklenk.jpg");
+  background-size: 105%;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.news {
+  border: 1px solid black;
+  height: 200px;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-header {
+  display: flex;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.wip {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 400px;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.wip-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+}
+
+.wip-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+  width: 900px;
+  border: 1px solid black;
+}
+
+.wip1, .wip2, .wip3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  background-color: gray;
+}
+
+.wip1 h3, .wip2 h3, .wip3 h3 {
+  padding-bottom: 3px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+  border: 1px solid blue;
+}
+
+.articles-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  border: 5px solid red;
+}
+
+.articles p {
+  text-align: justify;
+}
+
+.articles img {
+  width: 170px;
+  height: 200px;
+}
+
+.article1, .article2, .article3 {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  height: 300px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.article1-info, .article2-info, .article3-info {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.article1-info h3, .article2-info h3, .article3-info h3 {
+  padding-bottom: 10px;
+}
+
+
+.article1-cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+  border: 1px solid pink;
+}
+
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reviews-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 5px solid red;
+}
+
+.review1, .review2, .review3, .review4, .review5, .review6, .review7, .review8, .review9, .review10, .review11, .review12 {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 10px;
+  }
+
+.reviews img {
+  width: 150px;
+  height: 190px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
