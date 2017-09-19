@@ -103,7 +103,7 @@ main {
   justify-content: space-around;
   margin-right: 15px;
   width: 750px;
-  height: 480px;
+  height: 500px;
 }
 
 .personal-description-header {
@@ -116,7 +116,7 @@ main {
 .personal-description-blurp {
   display: flex;
   font-size: 20px;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .personal-description-content {
