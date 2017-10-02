@@ -91,7 +91,7 @@ header h1 {
 
 .topline {
   display: flex;
-  width: 960px;
+  width: 75%;
   justify-content: space-between;
   align-items: center;
 }
@@ -99,7 +99,9 @@ header h1 {
 .topline-header {
   display: flex;
   align-items: center;
+  text-align: center;
   color: white;
+  max-width: 30%;
 }
 
 .topline-header h1 {
@@ -108,12 +110,15 @@ header h1 {
 
 .topline-content {
   display: flex;
+  justify-content: center;
+  max-width: 80%;
+  width: 70%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  width: 600px;
+  width: 100%;
 }
 
 nav .button {
@@ -154,34 +159,33 @@ nav a:hover {
 
 .overview {
   display: flex;
-  flex-direction: row;
   width: 75%;
   align-items: center;
-  margin: 3rem;
+  margin: 4rem 2rem;
 }
 
-.overview-text {
+.overview-left {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 80%;
+  max-width: 65%;
   line-height: 270%;
 }
 
-.overview-text h1 {
+.overview-left h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #0D1531;
   line-height: 120%;
 }
 
-.overview-text h2 {
+.overview-left h2 {
   font-size: 1.8rem;
   color: #1C2646;
   text-align: left;
 }
 
-.overview-header {
+.overview-left-top {
   display: flex;
   padding-top: 0rem;
   padding-bottom: 1.5rem;
@@ -189,17 +193,24 @@ nav a:hover {
   padding-right: 0.5rem;
 }
 
-.overview-blurb {
+.overview-left-bottom {
   display: flex;
   padding-bottom: 0.5rem;
   padding-left: 2.2rem;
   padding-right: 0.5rem;
 }
 
-.overview-picture img {
+.overview-right {
   display: flex;
-  height: auto;
-  width: 20rem;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-right img {
+  display: flex;
+  height: 25rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 15%;
@@ -232,6 +243,7 @@ main {
 .personal-header, .news-header, .wip-header, .articles-header, .reviews-header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   padding: 2rem 0rem;
@@ -240,7 +252,18 @@ main {
 .personal-content {
   display: flex;
   flex-direction: column;
-  line-height: 170%;
+  line-height: 180%;
+  align-content: center;
+  text-align: center;
+}
+
+.personal-content p {
+  padding-bottom: 1rem;
+}
+
+.personal-content p:last-of-type {
+  padding-bottom: none;
+  padding-top: 1rem;
 }
 
 .personal-content img {
@@ -421,6 +444,8 @@ main {
   height: 16rem;
 }
 
+/*--------Footer-------*/
+
 footer {
   display: flex;
   flex-direction: column;
@@ -430,35 +455,210 @@ footer {
 }
 
 #rebus {
-  width: 70px;
+  width: 4rem;
   height: auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .topline-header  {
+/*--------Media Queries-------*/
+
+
+/*--------For desktop, take out tablet and mobile stuff-------*/
+
+@media only screen and (min-width: 1024px) { /*desktop style*/
+
+  .tablet {
     display: none;
   }
-  .topline-content {
-    max-width: 100%;
-    justify-content: space-around;
+
+  .mobile {
+    display: none;
   }
 
-  nav {
-    display: flex;
+ }
+
+/*--------For tablet------*/
+
+@media only screen and (max-width: 1024px) { /*tablet style*/
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .topline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .topline-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0rem 1rem;
+  }
+
+  .overview-left-bottom {
+    display: none;
+  }
+
+  .overview h1 {
+    font-size: 3rem;
+  }
+
+  .overview-left {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    align-content: center;
     justify-content: space-between;
+    padding: none;
+    margin: none;
+  }
+
+  .overview-left-top {
+    width: 90%;
+    padding: none;
+    margin: none;
+  }
+
+  .overview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .overview-right {
+    padding: none;
+    margin: none;
+  }
+
+  .wip-content {
+    flex-direction: column;
+  }
+
+  .wip-card {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+  }
+
+  .wip-content img {
+    display: none;
+  }
+
+  .article-info p {
+    display: none;
+  }
+
+  .article-info h3 {
+    font-size: 2rem;
+  }
+
+  .review img {
+    height: auto;
+  }
+
+}
+
+/*--------For smartphone------*/
+
+@media only screen and (max-width: 600px) { /*smartphone style*/
+
+  .tablet {
+    display: none;
+  }
+
+  .container-overview {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overview {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin:none;
+    padding: none;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .overview-left {
+    display: none;
+  }
+
+  .overview-left-top {
+    max-width: none;
+  }
+
+  .overview-right {
     width: 100%;
   }
 
-  nav .button {
-    border-radius: 10%;
-    border: none;
-    background-color: #F0F8FF;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    height: 2.5rem;
-    width: 2rem;
-    font-size: 0.8rem;
+  .personal {
+    width: 95%;
+  }
+
+  .news {
+    width: 95%;
+  }
+
+  .workinprogress {
+    width: 95%;
+  }
+
+  .wip-card {
+    height: 5rem;
+    box-shadow: none;
+    border-radius: 0%;
+    justify-content: center;
+  }
+
+  .wip-content {
+    align-items: center;
+    justify-content: center;
+    padding: none;
+    margin: none;
+  }
+
+  .wip-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .wip-content p {
+    display: none;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .articles-content {
+    flex-wrap: wrap;
+  }
+
+  .article-info {
+    display: none;
+  }
+
+  .article-cover {
+    width: 50%;
+  }
+
+  .reviews {
+    width: 100%;
+  }
+
+  .review h5 {
+    display: none;
+  }
+
+  .review img {
+    height: auto;
   }
 
 }
