@@ -13,7 +13,10 @@
       <meta charset="utf-8">
     <title>Michael Klenk, Philosopher</title>
     <meta name="description" content="Michael Klenk is a philosopher working at the intersection of metaethics, epistemology, and moral psychology.">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
   </head>
   <body>
     <!--header with top-line and navigation-->
@@ -45,6 +48,7 @@
             </div>
           </div>
           <div class="overview-picture">
+            <img src="./resources/images/michaelklenk.jpg" alt="Portrait image of Michael Klenk">
           </div>
         </div>
       </div>
@@ -52,71 +56,90 @@
     <!--the main body of the website-->
     <main>
       <!--Section with personal description of Michael Klenk-->
-      <div class="container-personal" id="over">
-        <section class="personal">
+      <section class="container-personal" id="over">
+        <div class="personal">
           <div class="personal-header">
             <h1>About Michael Klenk</h1>
           </div>
           <div class="personal-content">
             <p>Currently I am a PhD candidate in philosophy at <a href="https://www.uu.nl/en">Utrecht University</a>; my supervisor is Herman Philipse. In my dissertation, I assess whether objective moral judgements can be justified in light of evolutionary explanations of morality. [Paper 1] argues that evolutionary debunking  arguments that target the reliability of our beliefs are instances of the Benacerraf-Field challenge. [2] critically assesses the epistemological principle that underlies these arguments. [3] discusses the significance of moral disagreement as the key principle that undergirds debunking arguments. [4] argues that a common strategy to respond to the reliability-based debunking argument, so-called third-factor accounts, fail.
               Below is a visualisation of my CV:
-              <img src="resources/images/cv.png" alt="Degrees and working experience Michael Klenk">
+            <img src="resources/images/cv.png" alt="Degrees and working experience Michael Klenk">
             </p>
             <p>Apart from my research, I am activley involed in organising conferences (Examples: <a href="http://www.evoethics.com/evolution-and-moral-epistemology-2018.html">here</a>, <a href="http://www.evoethics.com/debunking--disagreement-2017.html">here</a>, <a href="http://dfdop37.weebly.com/">here</a>, or <a href="http://scienceslam-stuttgart.org/">here</a>) and the <a href="http://www.ozsw.nl/organisation/phd-council/">PhD council</a> of the Dutch Research School of Philosophy. If you want to get in touch, please contact me via <a href="mailto:m.b.o.t.klenk@uu.nl" target:"_top">email</a>.</p>
-            </div>
-          </section>
-      </div>
+          </div>
+        </div>
+      </section>
       <!--News about my work-->
-      <div class="container-news" id="news">
-        <section class="news">
+      <section class="container-news" id="news">
+        <div class="news">
           <div class="news-header">
             <h1>News!</h1>
           </div>
           <div class="news-content">
-                <p>2017/09: The <a href="www.dfdop37.weebly.com">37th Dutch Flemish of Philosophy</a> went very well from what I heard - thanks for Tijdde Tempels and Olya Kudina for taking over the moderation!</p>
-               <p>2017/09: I arrived in the US to begin two research fellowship at the Universities in Harvard and Columbia.</p>
-               <p>2017/08: Presented at the European Congress in Philosophy (ECAP9) in Munich and had a fantastic and insightful summer school on epistemology in Urbino, Italy.</p>
+            <ul>
+              <li>2017/09: The <a href="www.dfdop37.weebly.com">37th Dutch Flemish Day of Philosophy</a> went very well from what I heard - thanks for Tijdde Tempels and Olya Kudina for taking over the moderation!</li>
+              <li>2017/09: I arrived in the US to begin two research fellowship at the Universities in Harvard and Columbia.</li>
+              <li>2017/08: Presented at the European Congress in Philosophy (ECAP9) in Munich and had a fantastic and insightful summer school on epistemology in Urbino, Italy.</li>
+            </ul>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--work in progress-->
-      <div class="container-wip">
-        <section class="workinprogress" id="workinprogress">
+      <section class="container-wip">
+        <div class="workinprogress" id="workinprogress">
           <div class="wip-header">
             <h1>Work in Progress</h1>
-            <p>I am currently working on the projects below. Feel free to get in touch!</p>
+            <h2>I am currently working on the projects below. Feel free to get in touch!</h2>
           </div>
           <div class="wip-content">
-            <div class="wip">
-              <h3>A Non-Modal Accounts of Accidentality</h3>
-              <p>I am working towards a non-modal account of accidentality, to support a theory of defeat. For reasons I highlight in the article, I believe that such a notion is crucial to make debunking arguments work.</p>
+            <div class="wip-card" id="art3">
+              <h3>Modal Security and Non-Modal Accounts of Accidentality</h3>
+              <p>An argument against Clarke-Doane's Modal Security principle. I try to show that the principle is false as a general constraint on underminers, but that it raises a puzzle about the aim of (moral) belief.</p>
               <p><em>Status: submitted.</em></p>
             </div>
-            <div class="wip">
+            <div class="wip-card" id="art4">
               <h3>Debunking and Disagreement</h3>
               <p>Some argue that evolutionary debunking arguments work only if they reveal a disagreement problem. First, I argue that this is not so. Second, I show that if it were so, then debunking would not pose a problem, because it does not reveal problematic kinds of disagreement.</p>
             </div>
-            <div class="wip">
+            <div class="wip-card" id="text_independence and objectivity">
               <h3>Independence and Objectivity in Ethics</h3>
               <p>Objectivity in ethics is often understood in reference to an independence relation. Roughly, the ethical values are said to be independent of what we humans think about them. I present some counterexamples to this formulation and try to make the notion more precise.</p>
             </div>
-            <div class="wip">
+            <div class="wip-card" id="text_introduction evoethics">
               <h3>Introduction to Evolutionary Ethics</h3>
-              <p>I am writing an introduction on evolutionary ethics for an Open Textbook by the Rebus Foundation.</p>
-              <img id="rebus" src="resources/images/rebus.png" alt="Rebus Logo">
+              <p>A brief introduction on evolutionary ethics for an undergraduate Introduction to Philosophy textbook, published by the Rebus Foundation.</p>
+              <a href="https://about.rebus.community/2016/11/call-for-open-textbook-contributions-an-introduction-to-philosophy/"><img id="rebus" src="resources/images/rebus.png" alt="Rebus Logo"></a>
+            </div>
+            <div class="wip-card" id="text_business case study">
+              <h3>Lying and Agency in Business</h3>
+              <p>A case study about possible conflicts between personal and professional agency in business contexts, with a particular focus on lying. Under contract with Broadview press for book on business ethics.</p>
+            </div>
+            <div class="wip-card" id="art5">
+              <h3>Undermining Defeaters</h3>
+              <p>Undermining defeat is relatively well understood for experientially justified beliefs. I assess how it works in the case of a priori justified beliefs.</p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--Articles begin-->
-      <div class="container-articles">
-        <section class="articles" id="art">
+      <section class="container-articles">
+        <div class="articles" id="art">
           <div class="articles-header">
             <h1>Philosophy Articles</h1>
-            <p>Click on the journal cover to get to the published article.</p>
+            <h2>Click on the journal cover to get to the published article.</h2>
           </div>
           <div class="articles-content">
-            <article class="article">
+            <article class="article" id="art2">
+              <div class="article-info">
+                <h3>Can Moral Realists deflect defeat due to evolutionary explanations of morality?</h3>
+                <p><strong>Abstract:</strong> I address Andrew Moon's recent discussion of the question whether third-factor accounts are valid responses to debunking arguments against moral realism. Moon argues that third-factor responses are valid under certain conditions but leaves open whether moral realists can use his interpretation of the third-factor response to defuse the evolutionary debunking challenge. I rebut Moon's claim and answer his question. Moon's third-factor reply is valid only if we accept externalism about epistemic defeaters. However, even if we do, I argue, the conditions Moon identifies for a valid third-factor response are not met in the case of moral realism.</p>
+              </div>
+              <div class="article-cover">
+                <a href="http://onlinelibrary.wiley.com/doi/10.1111/papq.12207/full"><img src="resources/images/papq.jpg" alt="picture of article 2"></a>
+              </div>
+            </article>
+            <article class="article" id="art1">
               <div class="article-info">
                 <h3>Old Wine in New Bottles. Evolutionary Debunking Arguments and the Benacerraf-Field Challenge</h3>
                 <p><strong>Abstract:</strong> I argue that evolutionary, causal explanations do not play an essential role Street's epistemological evolutionary debunking argument. Street’s argument depends on the Benacerraf-Field challenge, which is the challenge to explain the reliability of our moral beliefs about causally inert moral properties. The Benacerraf-Field challenge relies on metaphysically necessary facts about realist moral properties, rather than on contingent Darwinian facts about the origin of our moral beliefs. Attempting to include an essential causal empirical premise yet avoiding recourse to the Benacerraf-Field problem yields an argument that is either self-defeating or of limited scope. Ultimately, evolutionary, causal explanations of our moral beliefs and their consequences do not present the strongest case against robust moral realism. </p>
@@ -125,90 +148,92 @@
                 <a href="https://link.springer.com/article/10.1007/s10677-017-9797-y"><img src="resources/images/etmp.jpg" alt="picture of article 1"></a>
               </div>
             </article>
-            <article class="article">
-              <div class="article-info">
-                <h3>Can Moral Realists deflect defeat due to evolutionary explanations of morality?</h3>
-                <p><strong>Abstract:</strong> I address Andrew Moon's recent discussion (2016, this journal) of the question whether third-factor accounts are valid responses to debunking arguments against moral realism. Moon argues that third-factor responses are valid under certain conditions but leaves open whether moral realists can use his interpretation of the third-factor response to defuse the evolutionary debunking challenge. I rebut Moon's claim and answer his question. Moon's third-factor reply is valid only if we accept externalism about epistemic defeaters. However, even if we do, I argue, the conditions Moon identifies for a valid third-factor response are not met in the case of moral realism.</p>
-              </div>
-              <div class="article-cover">
-                <a href="http://onlinelibrary.wiley.com/doi/10.1111/papq.12207/full"><img src="resources/images/papq.jpg" alt="picture of article 2"></a>
-              </div>
-            </article>
-            <article class="article">
+            <article class="article" id="text_moral development">
               <div class="article-info">
                 <h3>Measuring Moral Development</h3>
                   <p><strong>Abstract:</strong> In the aftermath of the financial crisis, heightened awareness of ethical issues sparked increased efforts within universities and businesses to educate people in moral matters. Sometimes, psychological tests are used to measure whether moral development occurred. If moral development is understood as a synonym of moral progress, then this might seem like a good sign: it seems as if we have a handle on making moral progress. Alas, moral development and moral progress are two very different things. And although we know a lot about moral development, what we know has little to do with moral progress. Let’s untangle both concepts. </p>
               </div>
               <div class="article-cover">
-                <a href="http://fufxl.nl/wp-content/uploads/2014/04/De-Filosoof-75.pdf"><img src="resources/images/filosoof.jpg" alt="picture of article 3"></a>
+                <a href="./resources/articles/text_moral development.pdf"><img src="resources/images/filosoof.jpg" alt="picture of article 3"></a>
               </div>
             </article>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
         <!--the book review section-->
-      <div class="container-reviews">
-        <section class="reviews" id="rev">
+      <section class="container-reviews">
+        <div class="reviews" id="rev">
           <div class="reviews-header">
             <h1>Book Reviews</h1>
-            <p>These are the books that I have reviewed. Click on the book to get to the published review.</p>
+            <h2>These are the books that I have reviewed. Click on the book to get to the published review.</h2>
           </div>
           <div class="reviews-content">
-            <div class="review">
-              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3085112&journal_code=EP&download=yes"><img src="resources/images/speechmorality.jpg" alt="Terence Cuneo, Speech and Morality"></a>
+            <div class="review clickable" id="rev_cuneo">
+              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3085112&journal_code=EP&download=yes"> </a>
+              <img src="resources/images/speechmorality.jpg" alt="Terence Cuneo, Speech and Morality">
               <h5>Ethical Perspectives 22 (2) 2015</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7464&cn=396"><img src="resources/images/low.jpg" alt="Bobbi S. Low, Why Sex Matters"></a>
+            <div class="review clickable" id="rev_low">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7464&cn=396"> </a>
+              <img src="resources/images/low.jpg" alt="Bobbi S. Low, Why Sex Matters">
               <h5>Metapsychology 19 (36) 2015</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7533&cn=139"><img src="resources/images/jannings.jpg" alt="Finn Janning, The Happiness of Burnout"></a>
+            <div class="review clickable" id="rev_janning">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7533&cn=139"> </a>
+              <img src="resources/images/jannings.jpg" alt="Finn Janning, The Happiness of Burnout">
               <h5>Metapsychology 19 (50) 2015</h5>
             </div>
-            <div class="review">
-              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3157187&journal_code=EP&download=yes"><img src="resources/images/bauman.jpg" alt="Zygmunt Bauman et al, Management in a Liquid Modern World"></a>
+            <div class="review clickable" id="rev_bauman">
+              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3157187&journal_code=EP&download=yes"> </a>
+              <img src="resources/images/bauman.jpg" alt="Zygmunt Bauman et al, Management in a Liquid Modern World">
               <h5>Ethical Perspectives 23 (2) 2016</h5>
             </div>
-            <div class="review5">
-              <a href="http://onlinelibrary.wiley.com/doi/10.1111/1746-8361.12149/abstract"><img src="resources/images/wielenberg.jpg" alt="Erik Wielenberg, Robust Ethics"></a>
+            <div class="review clickable" id="rev_wielenberg">
+              <a href="http://onlinelibrary.wiley.com/doi/10.1111/1746-8361.12149/abstract"> </a>
+              <img src="resources/images/wielenberg.jpg" alt="Erik Wielenberg, Robust Ethics">
               <h5>Dialectica 70 (3) 2016</h5>
             </div>
-            <div class="review">
-              <a href="http://www.journals.uchicago.edu/doi/pdfplus/10.1086/688124"><img src="resources/images/thompson.jpg" alt="Thompson, A Remarkable Journey"></a>
+            <div class="review clickable" id="rev_thompson">
+              <a href="http://www.journals.uchicago.edu/doi/pdfplus/10.1086/688124"> </a>
+              <img src="resources/images/thompson.jpg" alt="Thompson, A Remarkable Journey">
               <h5>The Quarterly Review of Biology 91 (3) 2016</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7652&cn=135"><img src="resources/images/tomasello.jpg" alt="Michael Tomasello, A Natural History of Human Morality"></a>
+            <div class="review clickable" id="rev_tomasello">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7652&cn=135"> </a>
+              <img src="resources/images/tomasello.jpg" alt="Michael Tomasello, A Natural History of Human Morality">
               <h5>Metapsychology 20 (20) 2016</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7731&cn=135"><img src="resources/images/baumard.jpg" alt="Nicholas Baumard, How Evolution Explains our Moral Nature"></a>
+            <div class="review clickable" id="rev_baumard">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7731&cn=135"> </a>
+              <img src="resources/images/baumard.jpg" alt="Nicholas Baumard, How Evolution Explains our Moral Nature">
               <h5>Metapsychology 20 (36) 2016</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7774&cn=135"><img src="resources/images/jussim.png" alt="Jussim et al, The Social Psychology of Morality"></a>
+            <div class="review clickable" id="rev_jussim et al">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7774&cn=135"> </a>
+              <img src="resources/images/jussim.png" alt="Jussim et al, The Social Psychology of Morality">
               <h5>Metapsychology 20 (48) 2016</h5>
             </div>
-            <div class="review">
-              <a href="http://marxandphilosophy.org.uk/reviewofbooks/reviews/2017/2623"><img src="resources/images/bowles.jpg" alt="Bowles, The Moral Economy"></a>
+            <div class="review clickable" id="rev_bowles">
+              <a href="http://marxandphilosophy.org.uk/reviewofbooks/reviews/2017/2623"> </a>
+              <img src="resources/images/bowles.jpg" alt="Bowles, The Moral Economy">
               <h5>Marx and Philosophy Review of Books, 25.01.2017</h5>
             </div>
-            <div class="review">
-              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3200598&journal_code=EP&download=yes"><img src="resources/images/joyce.jpg" alt="Richard Joyce, Essay in Moral Skepticism"></a>
+            <div class="review clickable" id="rev_joyce">
+              <a href="http://poj.peeters-leuven.be/content.php?url=article&id=3200598&journal_code=EP&download=yes"> </a>
+              <img src="resources/images/joyce.jpg" alt="Richard Joyce, Essay in Moral Skepticism">
               <h5>Ethical Perspectives 24 (1) 2017</h5>
             </div>
-            <div class="review">
-              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7882&cn=135"><img src="resources/images/liao.jpg" alt="Matthew Liao, Moral Brains"></a>
+            <div class="review clickable" id="rev_liao">
+              <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&id=7882&cn=135"> </a>
+              <img src="resources/images/liao.jpg" alt="Matthew Liao, Moral Brains">
               <h5>Metapsychology 21 (23) 2017</h5>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <h5>Michael Klenk</h5>
-      <h5>Utrecht University</h5>
       <h5>m.b.o.t.klenk@uu.nl</h5>
       <h5>copyright Michael Klenk 2017</h5>
     </footer>

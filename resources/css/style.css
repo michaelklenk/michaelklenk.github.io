@@ -4,8 +4,37 @@
   margin: 0px;
 }
 
+/*--------fundamental settings for the webpage-------*/
+
 html {
   font-size: 16px;
+}
+
+body { /*special font from Google API, serif */
+  font-family: "Merriweather";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Work Sans";
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p,
+li {
+  font-size: 1.1rem;
 }
 
 a {
@@ -14,6 +43,28 @@ a {
   font-weight: bolder;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
+div.clickable { /*workaround to make entire divs clickable without js*/
+  position: relative;
+}
+
+div.clickable a {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  text-decoration:none; /* Makes sure the link   doesn't get underlined */
+  z-index:10; /* raises anchor tag above everything else in div */
+  background-color:white; /*workaround to make clickable in IE */
+  opacity: 0; /*workaround to make clickable in IE */
+  filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+
+
+/*--------section specific CSS-------*/
 
 header {
   display: flex;
@@ -23,6 +74,12 @@ header {
   background-color: white;
   z-index: 5;
 }
+
+header h1 {
+  font-size: 2rem;
+}
+
+/*--------top bar with navigation and logo-------*/
 
 .container-topline {
   width: 100%;
@@ -41,7 +98,12 @@ header {
 
 .topline-header {
   display: flex;
+  align-items: center;
   color: white;
+}
+
+.topline-header h1 {
+  padding-top: 1rem;
 }
 
 .topline-content {
@@ -68,13 +130,21 @@ nav .button {
 }
 
 nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   text-decoration: none;
 }
 
+nav a:hover {
+  background-color: gray;
+}
+
+/*--------Wallpaper with background picture, portrait and blurb-------*/
+
 .container-overview {
   width: 100%;
-  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,56 +155,58 @@ nav a {
 .overview {
   display: flex;
   flex-direction: row;
-  width: 960px;
+  width: 75%;
   align-items: center;
+  margin: 3rem;
 }
 
 .overview-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  max-width: 80%;
+  line-height: 270%;
 }
 
 .overview-text h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #0D1531;
+  line-height: 120%;
 }
 
 .overview-text h2 {
   font-size: 1.8rem;
   color: #1C2646;
+  text-align: left;
 }
 
 .overview-header {
   display: flex;
   padding-top: 0rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
   padding-left: 2.2rem;
   padding-right: 0.5rem;
 }
 
 .overview-blurb {
   display: flex;
-  padding-top: 2rem;
   padding-bottom: 0.5rem;
   padding-left: 2.2rem;
   padding-right: 0.5rem;
 }
 
-.overview-picture {
+.overview-picture img {
   display: flex;
-  height: 20rem;
+  height: auto;
   width: 20rem;
-  background-image: url("../images/miksmile2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   border-radius: 15%;
   border: none;
 }
+
+/*--------main part of website-------*/
 
 main {
   display: flex;
@@ -142,13 +214,7 @@ main {
   align-items: center;
 }
 
-main h1 {
-  font-size: 3rem;
-}
-
-main p {
-  font-size: 1.1rem;
-}
+/*--------Section with Bio-------*/
 
 .container-personal {
   display: flex;
@@ -159,7 +225,7 @@ main p {
 .personal {
   display: flex;
   flex-direction: column;
-  width: 960px;
+  width: 75%;
   align-items: center;
 }
 
@@ -168,24 +234,23 @@ main p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0rem;
-}
-
-.pesonal-header p, .news-header p, .wip-header p, .articles-header p, .reviews-header p{
-  font-size: 2rem;
+  padding: 2rem 0rem;
 }
 
 .personal-content {
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  line-height: 170%;
 }
 
 .personal-content img {
-  width: 960px;
+  width: 100%;
   height: auto;
   padding: 3rem 0rem;
+  border: 2px solid #2C3552;
 }
+
+/*--------Section with News-------*/
 
 .container-news {
   display: flex;
@@ -194,7 +259,7 @@ main p {
 }
 
 .news {
-  width: 960px;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,6 +272,13 @@ main p {
   text-align: justify;
 }
 
+.news-content li {
+  padding: 0.5rem 0rem;
+  line-height: 150%;
+}
+
+/*--------Section with Work In progress stuff, wrap gallery-------*/
+
 .container-wip {
   display: flex;
   width: 100%;
@@ -216,7 +288,7 @@ main p {
 .workinprogress {
   display: flex;
   flex-direction: column;
-  width: 960px;
+  width: 75%;
   align-items: center;
   justify-content: center;
 }
@@ -228,21 +300,30 @@ main p {
   justify-content: center;
 }
 
-.wip {
+.wip-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   text-align: center;
+  align-items: center;
   background-color: #cce6ff;
   border-radius: 10%;
-  width: 25rem;
-  height: 15rem;
+  width: 40%;
+  height: 18rem;
   margin: 1rem 1rem;
+  box-shadow: 0.8rem 0.8rem 0.3rem #888888;
 }
 
-.wip h3 {
-  padding-bottom: 3px;
+.wip-card h3 {
+  margin: 2rem;
+  font-weight: bold;
 }
+
+.wip-card p {
+  margin: 0rem 2rem 1rem;
+  text-align: left;
+}
+
+/*--------Articles-------*/
 
 .container-articles {
   display: flex;
@@ -254,7 +335,7 @@ main p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 960px;
+  width: 75%;
 }
 
 .articles-content {
@@ -264,35 +345,44 @@ main p {
 }
 
 .articles p {
-  text-align: justify;
+  text-align: left;
+  line-height: 130%;
 }
 
 .article {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 1rem;
+  width: 100%;
 }
 
 .article-info {
   display: flex;
   flex-direction: column;
   padding-right: 2rem;
-  height: 15rem;
+  width: 75%;
   text-overflow: clip;
 }
 
 .article-info h3 {
-  padding-bottom: 10px;
+  padding-bottom: 0.7rem;
 }
 
 .article-cover {
   display: flex;
   flex-direction: column;
+  width: 20%;
+  box-shadow: 0.5rem 0.5rem 0.3rem #888888;
 }
 
 .articles img {
-  width: 12rem;
-  height: 15rem;
+  width: 100%;
+  height: auto;
 }
+
+/*--------Reviews-------*/
 
 .container-reviews {
   display: flex;
@@ -304,7 +394,7 @@ main p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 960px;
+  width: 75%;
 }
 
 .reviews-content {
@@ -316,21 +406,25 @@ main p {
 .review {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 20%;
   flex-wrap: wrap;
   text-align: center;
-  padding: 10px 10px;
+  margin: 0.5rem;
   }
 
+.review:hover {
+  border: 0.7rem solid #434D6E;
+}
+
 .reviews img {
-  width: 150px;
-  height: 190px;
+  width: 100%;
+  height: 16rem;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 14rem;
   align-items: center;
   justify-content: center;
 }
@@ -338,4 +432,33 @@ footer {
 #rebus {
   width: 70px;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .topline-header  {
+    display: none;
+  }
+  .topline-content {
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav .button {
+    border-radius: 10%;
+    border: none;
+    background-color: #F0F8FF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 2.5rem;
+    width: 2rem;
+    font-size: 0.8rem;
+  }
+
 }
