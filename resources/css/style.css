@@ -63,6 +63,9 @@ div.clickable a {
   filter: alpha(opacity=1); /*workaround to make clickable in IE */
 }
 
+em {
+  font-style: italic;
+}
 
 /*--------section specific CSS-------*/
 
@@ -254,7 +257,7 @@ main {
   flex-direction: column;
   line-height: 180%;
   align-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .personal-content p {
@@ -422,7 +425,7 @@ main {
 
 .reviews-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
 }
 
@@ -448,10 +451,22 @@ main {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 14rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-around;
+}
+
+footer div img {
+  height: 2rem;
+  width: 2rem;
 }
 
 #rebus {
